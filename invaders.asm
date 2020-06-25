@@ -131,7 +131,7 @@ in5:    stosw                   ; Set invader position
         ;
         ; Draw the barriers
         ;
-        mov di,0x55*0x280+0x10*2
+        mov di,0x55*OFFSET_X+0x10*2
         mov cl,5
 in48:
         mov ax,BARRIER_COLOR*0x0100+0x04
